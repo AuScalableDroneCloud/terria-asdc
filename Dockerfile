@@ -9,6 +9,7 @@ WORKDIR /usr/src/app
 COPY . /usr/src/app
 # RUN rm wwwroot/config.json && ln -s /etc/config/client/config.json wwwroot/config.json
 RUN yarn install
+RUN yarn gulp
 RUN export NODE_OPTIONS=--max_old_space_size=4096
 
 EXPOSE 3001
