@@ -1,0 +1,1509 @@
+{
+    "homeCamera": {
+      "north": -8,
+      "east": 158,
+      "south": -45,
+      "west": 109
+    },
+    "catalog": [
+      {
+        "type": "group",
+        "name" : "WheatHub",
+        "members":[
+            {
+                "type": "group",
+                "name" : "NUE",
+                "members":[
+                    {
+                        "type": "3d-tiles",
+                        "name" : "NUE - 21/07/2021",
+                        "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/NUE_20170721_M1_RGB_group1_densified_point_cloud/tileset.json"
+                      },
+                      {
+                        "type": "3d-tiles",
+                        "name" : "NUE - 22/09/2021",
+                        "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/NUE_20170922_M2_RGB_group1_densified_point_cloud/tileset.json",
+                      },
+                      {
+                        "type": "3d-tiles",
+                        "name" : "NUE - 16/10/2021",
+                        "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/NUE_20171016_M4_RGB_group1_densified_point_cloud/tileset.json",
+                      }
+                ]
+              },
+              {
+                "type": "group",
+                "name" : "VBIR",
+                "members":[
+                    {
+                        "type": "3d-tiles",
+                        "name" : "VBIR - 02/07/2021",
+                        "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/WheatHub_DPP_VBIR/20190702_VBIR_1_DenseCloud/tileset.json",
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name" : "VBIR - 01/08/2021",
+                        "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/WheatHub_DPP_VBIR/20190801_VBIR_2_DenseCloud/tileset.json",
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name" : "VBIR - 30/08/2021",
+                        "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/WheatHub_DPP_VBIR/20190830_VBIR_3_DenseCloud/tileset.json",
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name" : "VBIR - 01/10/2021",
+                        "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/WheatHub_DPP_VBIR/20191001_VBIR_4_DenseCloud/tileset.json",
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name" : "VBIR - 15/10/2021",
+                        "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/WheatHub_DPP_VBIR/20191015_VBIR_5_DenseCloud/tileset.json",
+                    },
+                    {
+                        "type": "geojson",
+                        "name" : "VBIR - Constant - EM3",
+                        "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/WheatHub_DPP_VBIR/VBIR_EM3.geojson"
+                    },
+                    {
+                        "type": "geojson",
+                        "name" : "VBIR - Constant - S2M3",
+                        "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/WheatHub_DPP_VBIR/VBIR_S2M3.geojson"
+                    }
+                ]
+              }
+        ]
+      },
+      {
+        "type": "group",
+        "name" : "USLN",
+        "members":[
+            {
+                "type": "3d-tiles",
+                "name": "Gegedzerick Rd",
+                "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/USLN-GegedzerickRoad_2021-05-21-odm_georeferenced_model/tileset.json"
+            },
+            {
+                "type": "group",
+                "name" : "Coolama",
+                "members":[
+                    {
+                        "type": "3d-tiles",
+                        "name": "Coolama - 11/02/2022 - Point Cloud",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://asdc.cloud.edu.au/api/projects/52/tasks/f47d2fb3-71ac-4bc0-8b8c-21d246c26147/assets/entwine_pointcloud/ept.json"
+                    },
+                    {
+                        "type": "open-street-map",
+                        "name": "Coolama - 11/02/2022 - Ortho (NDVI)",
+                        "url": "https://asdc.cloud.edu.au/api/projects/52/tasks/f47d2fb3-71ac-4bc0-8b8c-21d246c26147/orthophoto/tiles/?formula=NDVI&bands=RGN&color_map=rdylgn&rescale=-1%2C1",
+                        "rectangle": { "west": 148.8749411622239, "south": -36.345729531573845, "east": 148.87762159040525, "north": -36.3432744889566 },
+                        "maximumLevel": 24,
+                        "idealZoom":{
+                            "camera":{
+                                "position":{
+                                    "x": -4403724.504501668,
+                                    "y": 2658982.6155524785,
+                                    "z": -3760036.5088029876
+                                },
+                                "direction":{
+                                    "x": 0.12882966052703643,
+                                    "y": -0.07778775156330506,
+                                    "z": 0.9886111390608615
+                                },
+                                "up":{
+                                    "x": -0.8463037845320628,
+                                    "y": 0.5110008694336299,
+                                    "z": 0.1504925769756845
+                                },
+                                "west": 148.8749411622239, 
+                                "south": -36.345729531573845,
+                                "east": 148.87762159040525,
+                                "north": -36.3432744889566
+                            }
+                        }
+                    },
+                    {
+                        "type": "open-street-map",
+                        "name": "Coolama - 11/02/2022 - Ortho (RDVI)",
+                        "url": "https://asdc.cloud.edu.au/api/projects/52/tasks/f47d2fb3-71ac-4bc0-8b8c-21d246c26147/orthophoto/tiles/?color_map=rdylgn_r&formula=RDVI&bands=RGN&hillshade=&rescale=-15.969,13.363",
+                        "rectangle": { "west": 148.8749411622239, "south": -36.345729531573845, "east": 148.87762159040525, "north": -36.3432744889566 },
+                        "maximumLevel": 24,
+                        "idealZoom":{
+                            "camera":{
+                                "position":{
+                                    "x": -4403724.504501668,
+                                    "y": 2658982.6155524785,
+                                    "z": -3760036.5088029876
+                                },
+                                "direction":{
+                                    "x": 0.12882966052703643,
+                                    "y": -0.07778775156330506,
+                                    "z": 0.9886111390608615
+                                },
+                                "up":{
+                                    "x": -0.8463037845320628,
+                                    "y": 0.5110008694336299,
+                                    "z": 0.1504925769756845
+                                },
+                                "west": 148.8749411622239, 
+                                "south": -36.345729531573845,
+                                "east": 148.87762159040525,
+                                "north": -36.3432744889566
+                            }
+                        }
+                    },
+                    {
+                        "type": "open-street-map",
+                        "name": "Coolama - 11/02/2022 - DTM",
+                        "url": "https://asdc.cloud.edu.au/api/projects/52/tasks/f47d2fb3-71ac-4bc0-8b8c-21d246c26147/dtm/tiles/?color_map=viridis&hillshade=6&rescale=877.0599975585938%2C885.9813232421875",
+                        "rectangle": { "west": 148.87494115891505, "south": -36.345729676734614, "east": 148.877621544352, "north": -36.34327455489103 },
+                        "maximumLevel": 24,
+                        "idealZoom":{
+                            "camera":{
+                                "position":{
+                                    "x": -4403724.504501668,
+                                    "y": 2658982.6155524785,
+                                    "z": -3760036.5088029876
+                                },
+                                "direction":{
+                                    "x": 0.12882966052703643,
+                                    "y": -0.07778775156330506,
+                                    "z": 0.9886111390608615
+                                },
+                                "up":{
+                                    "x": -0.8463037845320628,
+                                    "y": 0.5110008694336299,
+                                    "z": 0.1504925769756845
+                                },
+                                "west": 148.8749411622239, 
+                                "south": -36.345729531573845,
+                                "east": 148.87762159040525,
+                                "north": -36.3432744889566
+                            }
+                        }
+                    },
+                    {
+                        "type": "geojson",
+                        "name" : "Coolama - 11/02/2022 - Contours",
+                        "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/USLN/Contours.json",
+                        "idealZoom":{
+                            "camera":{
+                                "position":{
+                                    "x": -4403724.504501668,
+                                    "y": 2658982.6155524785,
+                                    "z": -3760036.5088029876
+                                },
+                                "direction":{
+                                    "x": 0.12882966052703643,
+                                    "y": -0.07778775156330506,
+                                    "z": 0.9886111390608615
+                                },
+                                "up":{
+                                    "x": -0.8463037845320628,
+                                    "y": 0.5110008694336299,
+                                    "z": 0.1504925769756845
+                                },
+                                "west": 148.8749411622239, 
+                                "south": -36.345729531573845,
+                                "east": 148.87762159040525,
+                                "north": -36.3432744889566
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "group",
+                "name" : "Doran",
+                "members":[
+                    {
+                        "type": "3d-tiles",
+                        "name": "Doran - 11/02/2022 - Point Cloud",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://asdc.cloud.edu.au/api/projects/52/tasks/8a41e21b-23a2-4b44-a652-57064cb913b8/assets/entwine_pointcloud/ept.json"
+                    },
+                    {
+                        "type": "open-street-map",
+                        "name": "Doran - 11/02/2022 - Ortho (NDVI)",
+                        "url": "https://asdc.cloud.edu.au/api/projects/52/tasks/8a41e21b-23a2-4b44-a652-57064cb913b8/orthophoto/tiles/?formula=NDVI&bands=RGN&color_map=rdylgn&rescale=-1%2C1",
+                        "rectangle": { "west": 148.81171394103723, "south": -36.37338985662639, "east": 148.81392586642946, "north": -36.37234246842119 },
+                        "maximumLevel": 24,
+                        "idealZoom":{
+                            "camera":{
+                                "position":{
+                                    "x": -4399181.920770119,
+                                    "y": 2662894.922398329,
+                                    "z": -3762455.6677635764
+                                },
+                                "direction":{
+                                    "x": 0.1283246834008635,
+                                    "y": -0.07767697585625266,
+                                    "z": 0.9886855228291225
+                                },
+                                "up":{
+                                    "x": -0.8463037845320628,
+                                    "y": 0.5110008694336299,
+                                    "z": 0.1504925769756845
+                                },
+                                "west": 148.81171394103723,
+                                "south": -36.37338985662639, 
+                                "east": 148.81392586642946, 
+                                "north": -36.37234246842119
+                            }
+                        }
+                    },
+                    {
+                        "type": "open-street-map",
+                        "name": "Doran - 11/02/2022 - Ortho (RDVI)",
+                        "url": "https://asdc.cloud.edu.au/api/projects/52/tasks/8a41e21b-23a2-4b44-a652-57064cb913b8/orthophoto/tiles/?color_map=rdylgn_r&formula=RDVI&bands=RGN&hillshade=&rescale=-15.969,13.363",
+                        "rectangle": { "west": 148.81171394103723, "south": -36.37338985662639, "east": 148.81392586642946, "north": -36.37234246842119 },
+                        "maximumLevel": 24,
+                        "idealZoom":{
+                            "camera":{
+                                "position":{
+                                    "x": -4399181.920770119,
+                                    "y": 2662894.922398329,
+                                    "z": -3762455.6677635764
+                                },
+                                "direction":{
+                                    "x": 0.1283246834008635,
+                                    "y": -0.07767697585625266,
+                                    "z": 0.9886855228291225
+                                },
+                                "up":{
+                                    "x": -0.8463037845320628,
+                                    "y": 0.5110008694336299,
+                                    "z": 0.1504925769756845
+                                },
+                                "west": 148.81171394103723,
+                                "south": -36.37338985662639, 
+                                "east": 148.81392586642946, 
+                                "north": -36.37234246842119
+                            }
+                        }
+                    },
+                    {
+                        "type": "open-street-map",
+                        "name": "Doran - 11/02/2022 - DTM",
+                        "url": "https://asdc.cloud.edu.au/api/projects/52/tasks/8a41e21b-23a2-4b44-a652-57064cb913b8/dtm/tiles/?color_map=viridis&hillshade=6&rescale=901.5453491210938%2C918.5599975585938",
+                        "rectangle": { "west": 148.81171395918432, "south": -36.37338986125863, "east": 148.81392532747853, "north": -36.37234248023783 },
+                        "maximumLevel": 24,
+                        "idealZoom":{
+                            "camera":{
+                                "position":{
+                                    "x": -4399181.920770119,
+                                    "y": 2662894.922398329,
+                                    "z": -3762455.6677635764
+                                },
+                                "direction":{
+                                    "x": 0.1283246834008635,
+                                    "y": -0.07767697585625266,
+                                    "z": 0.9886855228291225
+                                },
+                                "up":{
+                                    "x": -0.8463037845320628,
+                                    "y": 0.5110008694336299,
+                                    "z": 0.1504925769756845
+                                },
+                                "west": 148.81171394103723,
+                                "south": -36.37338985662639, 
+                                "east": 148.81392586642946, 
+                                "north": -36.37234246842119
+                            }
+                        }
+                    },
+                    {
+                        "type": "geojson",
+                        "name" : "Doran - 11/02/2022 - Contours",
+                        "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/USLN/Contours_Doran.json",
+                        "idealZoom":{
+                            "camera":{
+                                "position":{
+                                    "x": -4399181.920770119,
+                                    "y": 2662894.922398329,
+                                    "z": -3762455.6677635764
+                                },
+                                "direction":{
+                                    "x": 0.1283246834008635,
+                                    "y": -0.07767697585625266,
+                                    "z": 0.9886855228291225
+                                },
+                                "up":{
+                                    "x": -0.8463037845320628,
+                                    "y": 0.5110008694336299,
+                                    "z": 0.1504925769756845
+                                },
+                                "west": 148.81171394103723,
+                                "south": -36.37338985662639, 
+                                "east": 148.81392586642946, 
+                                "north": -36.37234246842119
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+      },
+      {
+        "type": "group",
+        "name" : "Cyverse",
+        "members":[
+            {
+                "type": "group",
+                "name" : "01/05/2019",
+                "members": [
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 15_2",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/15_2/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 1a_g2",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/1a_g2/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 1a_u6",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/1a_u6/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 21_2",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/21_2/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 21_3",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/21_3/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 21_5",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/21_5/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 21_6",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/21_6/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 21_7",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/21_7/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 21_8",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/21_8/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 21_9",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/21_9/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 22-5",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/22-5/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 22_1",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/22_1/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 22_2",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/22_2/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 22_3",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/22_3/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 22_5",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/22_5/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 22_6",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/22_6/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 22_9",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/22_9/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 22_g1",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/22_g1/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 23_g1",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/23_g1/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 28_g1",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/28_g1/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 2b_u1",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/2b_u1/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 2n_10w",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/2n_10w/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 2s_1",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/2s_1/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 2s_2",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/2s_2/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 2s_6",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/2s_6/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 2s_9",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/2s_9/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 35a_u1",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/35a_u1/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 35b_u2",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/35b_u2/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 40_g1",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/40_g1/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 41_g2",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/41_g2/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 42_g2",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/42_g2/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 42_u1",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/42_u1/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 4_g2",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/4_g2/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 5_g1",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/5_g1/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 6_g2",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/6_g2/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 6a_1",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/6a_1/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 6a_15",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/6a_15/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 6a_16",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/6a_16/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 6a_20",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/6a_20/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 6a_3",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/6a_3/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 6a_36",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/6a_36/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 6a_39",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/6a_39/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 6a_42",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/6a_42/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 6b_3w",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/6b_3w/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 6b_54",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/6b_54/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 6b_56",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/6b_56/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 6b_60",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/6b_60/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 8_2",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/8_2/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 8_4",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/8_4/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 8_5",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/8_5/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 8_7",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/8_7/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 8_g2",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/8_g2/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/05/2019 - 9_g1",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/may_2019/9_g1/ept.json&truncate"
+                    }
+                ]
+            },
+            {
+                "type": "group",
+                "name" : "01/09/2019",
+                "members": [
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 15_g2",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/15_g2/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 1a_g2",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/1a_g2/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 1a_u6",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/1a_u6/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 21_2",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/21_2/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 21_3",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/21_3/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 21_5",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/21_5/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 21_6",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/21_6/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 21_7",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/21_7/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 21_8",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/21_8/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 21_9",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/21_9/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 22_1",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/22_1/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 22_2",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/22_2/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 22_3",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/22_3/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 22_5",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/22_5/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 22_6",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/22_6/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 22_9",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/22_9/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 22_g1",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/22_g1/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 23_g1",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/23_g1/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 28_g1",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/28_g1/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 2b_u1",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/2b_u1/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 2n_10w",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/2n_10w/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 2n_1w",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/2n_1w/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 2s_1",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/2s_1/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 2s_2",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/2s_2/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 2s_6",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/2s_6/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 2s_9",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/2s_9/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 35a_u1",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/35a_u1/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 35b_u2",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/35b_u2/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 40_g1",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/40_g1/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 41_g2",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/41_g2/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 42_g2",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/42_g2/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 42_u1",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/42_u1/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 4_g2",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/4_g2/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 5_g1",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/5_g1/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 6_g2",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/6_g2/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 6a_1",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/6a_1/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 6a_15",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/6a_15/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 6a_16",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/6a_16/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 6a_20",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/6a_20/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 6a_3",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/6a_3/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 6a_36",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/6a_36/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 6a_39",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/6a_39/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 6a_42",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/6a_42/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 6b_3w",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/6b_3w/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 6b_54",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/6b_54/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 6b_56",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/6b_56/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 6b_60",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/6b_60/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 8_2",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/8_2/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 8_4",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/8_4/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 8_5",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/8_5/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 8_7",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/8_7/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 8_g2",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/8_g2/ept.json&truncate"
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name": "Cyverse - 01/09/2019 - 9_g1",
+                        "url": "https://asdc.cloud.edu.au/ept/tileset.json?ept=https://de.cyverse.org/anon-files/iplant/home/shared/commons_repo/curated/Gillan_Ecosphere_2021/pointclouds/ept/sept_2019/9_g1/ept.json&truncate"
+                    }
+                ]
+            },
+            {
+                "type": "geojson",
+                "name" : "Cyverse - Constant - Footprints",
+                "url": "https://data.cyverse.org/dav-anon/iplant/commons/cyverse_curated/Gillan_Ecosphere_2021/leaflet_map/suas-footprints.geojson"
+            }
+        ]
+      },
+      {
+          "type": "group",
+          "name" : "AMRF",
+          "members":[
+              {
+                "type": "group",
+                "name" : "Perisher",
+                "members":[
+                    {
+                        "name": "Perisher - Photosynthetically Active Radiation & Shortwave Radiation",
+                        "type": "api-table",
+                        "refreshInterval": 300,
+                        "columns":[
+                            { 
+                                "name": "time"
+                            },
+                            { 
+                                "name": "mean_PAR",
+                                "units":"μmol/m²/s"
+                            },
+                            { 
+                                "name": "mean_TSR",
+                                "title":"mean_Total_Solar_Radiation",
+                                "units":"W/m²"
+                            }                            
+                        ],
+                        "apis":[
+                            {
+                                "url":"https://asdc.cloud.edu.au/cesium/influx/fivemin2w?station=AMRF_PER_D01"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Perisher - Soil Volumetric Water Content",
+                        "type": "api-table",
+                        "refreshInterval": 300,
+                        "columns":[
+                            { 
+                                "name": "time"
+                            },
+                            { 
+                                "name": "mean_Soil_VWC_01",
+                                "title":"mean_Soil_VWC_01",
+                                "units":"%"
+                            },
+                            { 
+                                "name": "mean_Soil_VWC_02",
+                                "title":"mean_Soil_VWC_02",
+                                "units":"%"
+                            }                        
+                        ],
+                        "apis":[
+                            {
+                                "url":"https://asdc.cloud.edu.au/cesium/influx/fivemin2w?station=AMRF_PER_D01"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Perisher - Soil Temperature Mean",
+                        "type": "api-table",
+                        "refreshInterval": 300,
+                        "columns":[
+                            { 
+                                "name": "time"
+                            },
+                            { 
+                                "name": "mean_Soil_Temp_01",
+                                "title":"mean_Soil_Temp_01",
+                                "units":"°C"
+                            },
+                            { 
+                                "name": "mean_Soil_Temp_02",
+                                "title":"mean_Soil_Temp_02",
+                                "units":"°C"
+                            },
+                            { 
+                                "name": "mean_Soil_Temp_03",
+                                "title":"mean_Soil_Temp_03",
+                                "units":"°C"
+                            },
+                            { 
+                                "name": "mean_Soil_Temp_04",
+                                "title":"mean_Soil_Temp_04",
+                                "units":"°C"
+                            },
+                            { 
+                                "name": "mean_Soil_Temp_05",
+                                "title":"mean_Soil_Temp_05",
+                                "units":"°C"
+                            },
+                            { 
+                                "name": "mean_Soil_Temp_06",
+                                "title":"mean_Soil_Temp_06",
+                                "units":"°C"
+                            }                     
+                        ],
+                        "apis":[
+                            {
+                                "url":"https://asdc.cloud.edu.au/cesium/influx/fivemin2w?station=AMRF_PER_D01"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Perisher - Soil Electrical Conductivity",
+                        "type": "api-table",
+                        "refreshInterval": 300,
+                        "columns":[
+                            { 
+                                "name": "time"
+                            },
+                            { 
+                                "name": "mean_Soil_EC_01",
+                                "title":"mean_Soil_EC_01",
+                                "units":"dS/m"
+                            },
+                            { 
+                                "name": "mean_Soil_EC_02",
+                                "title":"mean_Soil_EC_02",
+                                "units":"dS/m"
+                            },
+                            { 
+                                "name": "mean_Soil_EC_03",
+                                "title":"mean_Soil_EC_03",
+                                "units":"dS/m"
+                            },
+                            { 
+                                "name": "mean_Soil_EC_04",
+                                "title":"mean_Soil_EC_04",
+                                "units":"dS/m"
+                            },
+                            { 
+                                "name": "mean_Soil_EC_05",
+                                "title":"mean_Soil_EC_05",
+                                "units":"dS/m"
+                            },
+                            { 
+                                "name": "mean_Soil_EC_06",
+                                "title":"mean_Soil_EC_06",
+                                "units":"dS/m"
+                            }                     
+                        ],
+                        "apis":[
+                            {
+                                "url":"https://asdc.cloud.edu.au/cesium/influx/fivemin2w?station=AMRF_PER_D01"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Perisher - Air Temperature & Relative Humidity",
+                        "type": "api-table",
+                        "refreshInterval": 300,
+                        "columns":[
+                            { 
+                                "name": "time"
+                            },
+                            { 
+                                "name": "mean_Air_Temperature",
+                                "title":"mean_Air_Temperature",
+                                "units":"°C"
+                            },
+                            { 
+                                "name": "mean_Relative_Humidity",
+                                "title":"mean_Relative_Humidity",
+                                "units":"%H"
+                            }
+                        ],
+                        "apis":[
+                            {
+                                "url":"https://asdc.cloud.edu.au/cesium/influx/fivemin2w?station=AMRF_PER_D01"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Perisher - Daily Rainfall Total",
+                        "type": "api-table",
+                        "refreshInterval": 300,
+                        "columns":[
+                            { 
+                                "name": "time"
+                            },
+                            { 
+                                "name": "sum_Rain",
+                                "title":"sum_Rain",
+                                "units":"mm"
+                            }
+                            
+                        ],
+                        "apis":[
+                            {
+                                "url":"https://asdc.cloud.edu.au/cesium/influx/daily2w?station=AMRF_PER_D01"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Perisher - Snow Depth",
+                        "type": "api-table",
+                        "refreshInterval": 300,
+                        "columns":[
+                            { 
+                                "name": "time"
+                            },
+                            { 
+                                "name": "snow_Depth_Mean",
+                                "title": "mean_Snow_Depth",
+                                "units":"m"
+                            } 
+                        ],
+                        "apis":[
+                            {
+                                "url":"https://asdc.cloud.edu.au/cesium/influx/fivemin2w?station=AMRF_PER_D01"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Perisher - Mean Battery Voltage",
+                        "type": "api-table",
+                        "refreshInterval": 300,
+                        "columns":[
+                            { 
+                                "name": "time"
+                            },
+                            { 
+                                "name": "mean_Battery_Voltage",
+                                "title":"cr1000x.mean_Battery_Voltage",
+                                "units":"V"
+                            }
+                        ],
+                        "apis":[
+                            {
+                                "url":"https://asdc.cloud.edu.au/cesium/influx/fivemin2w?station=AMRF_PER_D01"
+                            }
+                        ]
+                    }
+                ]
+              },
+              {
+                "type": "group",
+                "name" : "Falls Creek",
+                "members":[
+                    {
+                        "name": "Falls Creek - Photosynthetically Active Radiation & Shortwave Radiation",
+                        "type": "api-table",
+                        "refreshInterval": 300,
+                        "columns":[
+                            { 
+                                "name": "time"
+                            },
+                            { 
+                                "name": "mean_PAR",
+                                "units":"μmol/m²/s"
+                            },
+                            { 
+                                "name": "mean_TSR",
+                                "title":"mean_Total_Solar_Radiation",
+                                "units":"W/m²"
+                            }                            
+                        ],
+                        "apis":[
+                            {
+                                "url":"https://asdc.cloud.edu.au/cesium/influx/fivemin2w?station=AMRF_FRY_D01"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Falls Creek - Soil Volumetric Water Content",
+                        "type": "api-table",
+                        "refreshInterval": 300,
+                        "columns":[
+                            { 
+                                "name": "time"
+                            },
+                            { 
+                                "name": "mean_Soil_VWC_01",
+                                "title":"mean_Soil_VWC_01",
+                                "units":"%"
+                            },
+                            { 
+                                "name": "mean_Soil_VWC_02",
+                                "title":"mean_Soil_VWC_02",
+                                "units":"%"
+                            }                        
+                        ],
+                        "apis":[
+                            {
+                                "url":"https://asdc.cloud.edu.au/cesium/influx/fivemin2w?station=AMRF_FRY_D01"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Falls Creek - Soil Temperature Mean",
+                        "type": "api-table",
+                        "refreshInterval": 300,
+                        "columns":[
+                            { 
+                                "name": "time"
+                            },
+                            { 
+                                "name": "mean_Soil_Temp_01",
+                                "title":"mean_Soil_Temp_01",
+                                "units":"°C"
+                            },
+                            { 
+                                "name": "mean_Soil_Temp_02",
+                                "title":"mean_Soil_Temp_02",
+                                "units":"°C"
+                            },
+                            { 
+                                "name": "mean_Soil_Temp_03",
+                                "title":"mean_Soil_Temp_03",
+                                "units":"°C"
+                            },
+                            { 
+                                "name": "mean_Soil_Temp_04",
+                                "title":"mean_Soil_Temp_04",
+                                "units":"°C"
+                            },
+                            { 
+                                "name": "mean_Soil_Temp_05",
+                                "title":"mean_Soil_Temp_05",
+                                "units":"°C"
+                            },
+                            { 
+                                "name": "mean_Soil_Temp_06",
+                                "title":"mean_Soil_Temp_06",
+                                "units":"°C"
+                            }                     
+                        ],
+                        "apis":[
+                            {
+                                "url":"https://asdc.cloud.edu.au/cesium/influx/fivemin2w?station=AMRF_FRY_D01"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Falls Creek - Soil Electrical Conductivity",
+                        "type": "api-table",
+                        "refreshInterval": 300,
+                        "columns":[
+                            { 
+                                "name": "time"
+                            },
+                            { 
+                                "name": "mean_Soil_EC_01",
+                                "title":"mean_Soil_EC_01",
+                                "units":"dS/m"
+                            },
+                            { 
+                                "name": "mean_Soil_EC_02",
+                                "title":"mean_Soil_EC_02",
+                                "units":"dS/m"
+                            },
+                            { 
+                                "name": "mean_Soil_EC_03",
+                                "title":"mean_Soil_EC_03",
+                                "units":"dS/m"
+                            },
+                            { 
+                                "name": "mean_Soil_EC_04",
+                                "title":"mean_Soil_EC_04",
+                                "units":"dS/m"
+                            },
+                            { 
+                                "name": "mean_Soil_EC_05",
+                                "title":"mean_Soil_EC_05",
+                                "units":"dS/m"
+                            },
+                            { 
+                                "name": "mean_Soil_EC_06",
+                                "title":"mean_Soil_EC_06",
+                                "units":"dS/m"
+                            }                     
+                        ],
+                        "apis":[
+                            {
+                                "url":"https://asdc.cloud.edu.au/cesium/influx/fivemin2w?station=AMRF_FRY_D01"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Falls Creek - Air Temperature & Relative Humidity",
+                        "type": "api-table",
+                        "refreshInterval": 300,
+                        "columns":[
+                            { 
+                                "name": "time"
+                            },
+                            { 
+                                "name": "mean_Air_Temperature",
+                                "title":"mean_Air_Temperature",
+                                "units":"°C"
+                            },
+                            { 
+                                "name": "mean_Relative_Humidity",
+                                "title":"mean_Relative_Humidity",
+                                "units":"%H"
+                            }
+                        ],
+                        "apis":[
+                            {
+                                "url":"https://asdc.cloud.edu.au/cesium/influx/fivemin2w?station=AMRF_FRY_D01"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Falls Creek - Daily Rainfall Total",
+                        "type": "api-table",
+                        "refreshInterval": 300,
+                        "columns":[
+                            { 
+                                "name": "time"
+                            },
+                            { 
+                                "name": "sum_Rain",
+                                "title":"sum_Rain",
+                                "units":"mm"
+                            }
+                            
+                        ],
+                        "apis":[
+                            {
+                                "url":"https://asdc.cloud.edu.au/cesium/influx/daily2w?station=AMRF_FRY_D01"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Falls Creek - Snow Depth",
+                        "type": "api-table",
+                        "refreshInterval": 300,
+                        "columns":[
+                            { 
+                                "name": "time"
+                            },
+                            { 
+                                "name": "snow_Depth_Mean",
+                                "title": "mean_Snow_Depth",
+                                "units":"m"
+                            } 
+                        ],
+                        "apis":[
+                            {
+                                "url":"https://asdc.cloud.edu.au/cesium/influx/fivemin2w?station=AMRF_FRY_D01"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Falls Creek - Mean Battery Voltage",
+                        "type": "api-table",
+                        "refreshInterval": 300,
+                        "columns":[
+                            { 
+                                "name": "time"
+                            },
+                            { 
+                                "name": "mean_Battery_Voltage",
+                                "title":"cr1000x.mean_Battery_Voltage",
+                                "units":"V"
+                            }
+                        ],
+                        "apis":[
+                            {
+                                "url":"https://asdc.cloud.edu.au/cesium/influx/fivemin2w?station=AMRF_FRY_D01"
+                            }
+                        ]
+                    }
+                ]
+              }
+          ]
+      },
+      {
+        "type": "group",
+        "name" : "ARA",
+        "members":[
+            {
+                "type": "group",
+                "name" : "Adelaide Hills",
+                "members":[
+                    {
+                        "type": "3d-tiles",
+                        "name" : "Adelaide Hills - 08/01/2020",
+                        "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/ARA/Adelaide+Hills/Tilesets/2020-01-08/tileset.json",
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name" : "Adelaide Hills - 15/01/2020",
+                        "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/ARA/Adelaide+Hills/Tilesets/2020-01-15/tileset.json",
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name" : "Adelaide Hills - 26/10/2020",
+                        "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/ARA/Adelaide+Hills/Tilesets/2020-01-26/tileset.json",
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name" : "Adelaide Hills - 09/09/2020",
+                        "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/ARA/Adelaide+Hills/Tilesets/2020-09-09/tileset.json",
+                    }
+                ]
+            },
+            {
+                "type": "group",
+                "name" : "Kangaroo Island",
+                "members":[
+                    {
+                        "type": "3d-tiles",
+                        "name" : "Adelaide Hills - 27/01/2020",
+                        "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/ARA/Kangaroo+Island/Tilesets/2020-01-27/tileset.json",
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name" : "Adelaide Hills - 06/02/2020",
+                        "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/ARA/Kangaroo+Island/Tilesets/2020-02-06/tileset.json",
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name" : "Adelaide Hills - 13/04/2020",
+                        "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/ARA/Kangaroo+Island/Tilesets/2020-04-13/tileset.json",
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name" : "Adelaide Hills - 10/09/2020",
+                        "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/ARA/Kangaroo+Island/Tilesets/2020-09-10/tileset.json",
+                    }
+                ]
+            }
+        ]
+      },
+      {
+        "type": "group",
+        "name" : "DDP",
+        "members":[
+            {
+                "type": "3d-tiles",
+                "name" : "Graham Road Construction Site - 13/02/2020",
+                "url": "https://swift.rc.nectar.org.au/v1/AUTH_9f7c80bfd20f45bebc780b06c405f0df/ddp-projects/1012_GrahamRoad_CraneSimulation/2022_02_13/Scene/tileset_20220213_RC.json",
+            },
+            {
+                "type": "3d-tiles",
+                "name" : "Graham Road Construction Site - 20/02/2020",
+                "url": "https://swift.rc.nectar.org.au/v1/AUTH_9f7c80bfd20f45bebc780b06c405f0df/ddp-projects/1012_GrahamRoad_CraneSimulation/2022_02_20/Model/Scene/tileset_20220220_RC.json",
+            },
+            {
+                "type": "3d-tiles",
+                "name" : "Graham Road Construction Site - 13/03/2020",
+                "url": "https://swift.rc.nectar.org.au/v1/AUTH_9f7c80bfd20f45bebc780b06c405f0df/ddp-projects/1012_GrahamRoad_CraneSimulation/2022_03_13/Scene/tileset_20220313_RC.json",
+            }
+        ]
+      },
+      {
+        "type": "group",
+        "name" : "Miscellaneous",
+        "members":[
+            {
+              "type": "group",
+              "name" : "Dryandra",
+              "members":[
+                {
+                    "type":"gltf",
+                    "name": "Dryandra Model",
+                    "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/Dryandra+Tree/dryandra-tree-scan.glb",
+                    "origin":{
+                        "longitude": 149.1106974606,
+                        "latitude": -35.2614095095,
+                        "height": 636.0639605530833
+                    },
+                    "rotation": {
+                        "heading": 110,
+                        "pitch": 0,
+                        "roll": -2
+                    }
+                },
+                {
+                    "type":"3d-tiles",
+                    "name": "Dryandra Point Cloud",
+                    "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/Dryandra+Tree/Point+Cloud/tileset.json"
+                }
+              ]
+            },
+            {
+                "type": "group",
+                "name" : "Graffiti",
+                "members":[
+                    {
+                        "type":"gltf",
+                        "name": "Graffiti Model",
+                        "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/Graffiti+Underpass/scene.gltf",
+                        "origin": {
+                            "longitude": 149.1109390899,
+                            "latitude": -35.2654136809,
+                            "height": 632.9976221420972
+                        },
+                        "rotation": {
+                            "heading": -15,
+                            "pitch": 1,
+                            "roll": 5
+                        }
+                    },
+                    {
+                        "type":"3d-tiles",
+                        "name": "Graffiti Point Cloud",
+                        "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/Graffiti+Underpass/Point+Cloud/tileset.json"
+                    }
+                ]
+            }
+        ]
+      }
+    ],
+    "baseMaps": {
+        "defaultBaseMapId": "basemap-bing-aerial-with-labels"
+    }
+  }
+  
