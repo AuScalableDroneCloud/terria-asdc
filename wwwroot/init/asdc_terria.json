@@ -71,6 +71,42 @@
                         "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/WheatHub_DPP_VBIR/VBIR_S2M3.geojson"
                     }
                 ]
+              },
+              {
+                "type": "group",
+                "name" : "STAR",
+                "members":[
+                    {
+                        "type": "3d-tiles",
+                        "name" : "STAR - 03/07/2019",
+                        "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/WheatHub_DPP_STAR/20190703_STAR_1_DenseCloud/tileset.json",
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name" : "STAR - 05/08/2019",
+                        "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/WheatHub_DPP_STAR/20190805_STAR_2_DenseCloud/tileset.json",
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name" : "STAR - 27/08/2019",
+                        "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/WheatHub_DPP_STAR/20190827_STAR_3_DenseCloud/tileset.json",
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name" : "STAR - 10/09/2019",
+                        "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/WheatHub_DPP_STAR/20190910_STAR_4_DenseCloud/tileset.json",
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name" : "STAR - 24/09/2019",
+                        "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/WheatHub_DPP_STAR/20190924_STAR_5_DenseCloud/tileset.json",
+                    },
+                    {
+                        "type": "3d-tiles",
+                        "name" : "STAR - 21/10/2019",
+                        "url": "https://appf-anu.s3.ap-southeast-2.amazonaws.com/Cesium/WheatHub_DPP_STAR/20191021_STAR_6_DenseCloud/tileset.json",
+                    }
+                ]
               }
         ]
       },
@@ -1440,6 +1476,11 @@
                 "type": "3d-tiles",
                 "name" : "Graham Road Construction Site - 13/03/2020",
                 "url": "https://swift.rc.nectar.org.au/v1/AUTH_9f7c80bfd20f45bebc780b06c405f0df/ddp-projects/1012_GrahamRoad_CraneSimulation/2022_03_13/Scene/tileset_20220313_RC.json",
+            },
+            {
+                "type": "3d-tiles",
+                "name" : "Graham Road Construction Site - 27/03/2020",
+                "url": "https://swift.rc.nectar.org.au/v1/AUTH_9f7c80bfd20f45bebc780b06c405f0df/ddp-projects/1012_GrahamRoad_CraneSimulation/2022_03_27/Scene/tileset_20220327_RC.json",
             }
         ]
       },
