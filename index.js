@@ -13,6 +13,16 @@ import ShareDataService from 'terriajs/lib/Models/ShareDataService';
 // import registerAnalytics from 'terriajs/lib/Models/registerAnalytics';
 // import registerCatalogMembers from 'terriajs/lib/Models/registerCatalogMembers';
 import registerCustomComponentTypes from 'terriajs/lib/ReactViews/Custom/registerCustomComponentTypes';
+import * as BuildShareLink from 'terriajs/lib/ReactViews/Map/Panels/SharePanel/BuildShareLink';
+import * as BuildShareLinkMod from './BuildShareLinkMod.js';
+
+//overwrite link function for webodm datasets (assumes public tasks)
+function overwriteGetShareData(obj) {
+    obj.getShareData = BuildShareLinkMod.getShareData;
+    obj.buildShareLink= BuildShareLinkMod.buildShareLink;
+}
+overwriteGetShareData(BuildShareLink);
+
 import Terria from 'terriajs/lib/Models/Terria';
 import updateApplicationOnHashChange from 'terriajs/lib/ViewModels/updateApplicationOnHashChange';
 import updateApplicationOnMessageFromParentWindow from 'terriajs/lib/ViewModels/updateApplicationOnMessageFromParentWindow';
@@ -27,7 +37,7 @@ import defined from 'terriajs-cesium/Source/Core/defined';
 import TrustedServers from 'terriajs-cesium/Source/Core/TrustedServers';
 
 TrustedServers.add("asdc.cloud.edu.au",443);
-
+// TrustedServers.add("localhost",8080);
 // Register all types of catalog members in the core TerriaJS.  If you only want to register a subset of them
 // (i.e. to reduce the size of your application if you don't actually use them all), feel free to copy a subset of
 // the code in the registerCatalogMembers function here instead.
