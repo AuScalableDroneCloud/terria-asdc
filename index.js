@@ -42,7 +42,7 @@ TrustedServers.add("asdc.cloud.edu.au",443);
 import * as loadJson5 from 'terriajs/lib/Core/loadJson5';
 //overwrite headers to avoid caching
 function overwriteDefaultHeadersForJsonReqs(obj) {
-    obj.default.defaultHeaders["Cache-control"] = "no-cache"
+    obj.default.defaultHeaders["Cache-control"] = "no-cache";
 }
 overwriteDefaultHeadersForJsonReqs(loadJson5);
 // Register all types of catalog members in the core TerriaJS.  If you only want to register a subset of them
