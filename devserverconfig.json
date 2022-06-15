@@ -22,7 +22,11 @@
         "gov.uk",
         "gov.nz",
         "services.aremi.data61.io",
-        "swift.rc.nectar.org.au"
+        "swift.rc.nectar.org.au",
+        "terria-catalogs-public.storage.googleapis.com",
+        "amazonaws.com",
+        "nsw.gov.au",
+        "terria.io"
     ]
 }
 
