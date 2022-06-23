@@ -199,12 +199,14 @@ const SharePanel = observer(
       this.setState({
         isOpen: open,
         showMakeODMDatasetsPublicQuestion : !!this.props.terria.workbench.itemIds.filter(isShareable(this.props.terria)).find(w => {
-          const model = this.props.terria.getModelById(BaseModel, w);
-          var isPublicTask = model.info[0].contentAsObject.public;
-          const containerModel = this.props.terria.getModelById(BaseModel, model.completeKnownContainerUniqueIds[model.completeKnownContainerUniqueIds.length - 2]);
-          const hasChangePermission = containerModel.itemProperties && containerModel.itemProperties.permissions && containerModel.itemProperties.permissions.includes("change");
-          if(w.startsWith("//WebODM Projects") && !isPublicTask && hasChangePermission){
-            return w
+          if(w.startsWith("//WebODM Projects")){
+            const model = this.props.terria.getModelById(BaseModel, w);
+            var isPublicTask = model.info[0].contentAsObject.public;
+            const containerModel = this.props.terria.getModelById(BaseModel, model.completeKnownContainerUniqueIds[model.completeKnownContainerUniqueIds.length - 2]);
+            const hasChangePermission = containerModel.itemProperties && containerModel.itemProperties.permissions && containerModel.itemProperties.permissions.includes("change");
+            if(!isPublicTask && hasChangePermission){
+              return w
+            }
           }
         }),
         loading:false
