@@ -119,7 +119,10 @@ export function getShareData(terria, viewState, options = { includeStories: true
                     }
                 }
                 const model = terria.getModelById(BaseModel, w);
-                newModels[`//Shared WebODM Datasets/${model.name}`] = initSource.models[w]
+                newModels[`//Shared WebODM Datasets/${model.name}`] = initSource.models[w];
+
+                newModels[`//Shared WebODM Datasets/${model.name}`].knownContainerUniqueIds[0] = "//Shared WebODM Datasets";
+
                 initSource.workbench[i] = `//Shared WebODM Datasets/${model.name}`;
                 var defStratum = model.strata.get("definition");
                 var modelJson = saveStratumToJson(model.traits, defStratum);
