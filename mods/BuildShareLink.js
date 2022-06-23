@@ -88,29 +88,36 @@ export function getShareData(terria, viewState, options = { includeStories: true
             addStories(terria, initSource);
         }
 
-        initSource.catalog = [{
-            type: "group",
-            name: "Shared WebODM Datasets",
-            members: []
-        }]
+        initSource.catalog = []
 
         var newModels = {}
         Object.keys(initSource.models).map(m=>{
-            if (!m.startsWith("//WebODM Projects")){
+            if (!m.startsWith("//WebODM Projects") && !m.startsWith("//Shared WebODM Datasets")){
                 newModels[m] = initSource.models[m];
             }
         })
-        
-        newModels["//Shared WebODM Datasets"]={
-            "isOpen": true,
-            "knownContainerUniqueIds": [
-                "/"
-            ],
-            "type": "group"
-        }
 
         initSource.workbench.map((w,i)=>{
+            if (w.startsWith("//WebODM Projects") || w.startsWith("//Shared WebODM Datasets")){
+                if (!initSource.catalog.find(m=>m.name=="Shared WebODM Datasets")){
+                    initSource.catalog.push({
+                        type: "group",
+                        name: "Shared WebODM Datasets",
+                        members: []
+                    })
+                }
+            }
+
             if (w.startsWith("//WebODM Projects")){
+                if(!newModels["//Shared WebODM Datasets"]){
+                    newModels["//Shared WebODM Datasets"]={
+                        "isOpen": true,
+                        "knownContainerUniqueIds": [
+                            "/"
+                        ],
+                        "type": "group"
+                    }
+                }
                 const model = terria.getModelById(BaseModel, w);
                 newModels[`//Shared WebODM Datasets/${model.name}`] = initSource.models[w]
                 initSource.workbench[i] = `//Shared WebODM Datasets/${model.name}`;

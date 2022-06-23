@@ -30,7 +30,8 @@ module.exports = function(devMode, hot) {
                     include: [
                         path.resolve(__dirname, '..', 'index.js'),
                         path.resolve(__dirname, '..', 'entry.js'),
-                        path.resolve(__dirname, '..', 'lib')
+                        path.resolve(__dirname, '..', 'lib'),
+                        path.resolve(__dirname, '..', 'mods'),
                     ],
                     use: [
                         {

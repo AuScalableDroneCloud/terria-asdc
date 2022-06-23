@@ -14,14 +14,19 @@ import ShareDataService from 'terriajs/lib/Models/ShareDataService';
 // import registerCatalogMembers from 'terriajs/lib/Models/registerCatalogMembers';
 import registerCustomComponentTypes from 'terriajs/lib/ReactViews/Custom/registerCustomComponentTypes';
 import * as BuildShareLink from 'terriajs/lib/ReactViews/Map/Panels/SharePanel/BuildShareLink';
-import * as BuildShareLinkMod from './BuildShareLinkMod.js';
+import * as BuildShareLinkMod from './mods/BuildShareLink.js';
 
-//overwrite link function for webodm datasets (assumes public tasks)
+//overwrite link function for webodm datasets
 function overwriteGetShareData(obj) {
     obj.getShareData = BuildShareLinkMod.getShareData;
     obj.buildShareLink= BuildShareLinkMod.buildShareLink;
 }
 overwriteGetShareData(BuildShareLink);
+
+//overwrite share panel to show the make public question for webodm datasets
+import * as SharePanel from "terriajs/lib/ReactViews/Map/Panels/SharePanel/SharePanel.jsx";
+import * as SharePanelMod from "./mods/SharePanel.jsx";
+SharePanel.default = SharePanelMod.default;
 
 import Terria from 'terriajs/lib/Models/Terria';
 import updateApplicationOnHashChange from 'terriajs/lib/ViewModels/updateApplicationOnHashChange';
@@ -45,6 +50,7 @@ function overwriteDefaultHeadersForJsonReqs(obj) {
     obj.default.defaultHeaders["Cache-control"] = "no-cache";
 }
 overwriteDefaultHeadersForJsonReqs(loadJson5);
+
 // Register all types of catalog members in the core TerriaJS.  If you only want to register a subset of them
 // (i.e. to reduce the size of your application if you don't actually use them all), feel free to copy a subset of
 // the code in the registerCatalogMembers function here instead.
