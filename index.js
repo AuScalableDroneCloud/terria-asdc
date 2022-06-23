@@ -26,7 +26,10 @@ overwriteGetShareData(BuildShareLink);
 //overwrite share panel to show the make public question for webodm datasets
 import * as SharePanel from "terriajs/lib/ReactViews/Map/Panels/SharePanel/SharePanel.jsx";
 import * as SharePanelMod from "./mods/SharePanel.jsx";
-SharePanel.default = SharePanelMod.default;
+function overwriteSharePanel(obj){
+    obj.default = SharePanelMod.default;
+}
+overwriteSharePanel(SharePanel);
 
 import Terria from 'terriajs/lib/Models/Terria';
 import updateApplicationOnHashChange from 'terriajs/lib/ViewModels/updateApplicationOnHashChange';
@@ -89,7 +92,7 @@ if (process.env.NODE_ENV !== "production" && module.hot) {
 }
 
 //ignore catalog errors for webodm users who are not logged in
-terria.userProperties.set("ignoreErrors","1");
+// terria.userProperties.set("ignoreErrors","1");
 
 module.exports = terria.start({
     // If you don't want the user to be able to control catalog loading via the URL, remove the applicationUrl property below
