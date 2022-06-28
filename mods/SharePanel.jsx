@@ -208,7 +208,18 @@ const SharePanel = observer(
               return w
             }
           }
-        }),
+        }) 
+        || !!this.props.terria.stories.slice().find(s=>s.shareData.initSources.find(is=>is.workbench.find((w,i)=>{
+          if(w.startsWith("//WebODM Projects")){
+            const model = this.props.terria.getModelById(BaseModel, w);
+            var isPublicTask = model.info[0].contentAsObject.public;
+            const containerModel = this.props.terria.getModelById(BaseModel, model.completeKnownContainerUniqueIds[model.completeKnownContainerUniqueIds.length - 2]);
+            const hasChangePermission = containerModel.itemProperties && containerModel.itemProperties.permissions && containerModel.itemProperties.permissions.includes("change");
+            if(!isPublicTask && hasChangePermission){
+              return w
+            }
+          }
+        }))),
         loading:false
       });
 
@@ -448,6 +459,9 @@ const SharePanel = observer(
       this.setState({loading:true});
 
       const regex = /\/projects\/([^\/]*)\/tasks\/([^\/]*)\//;
+
+      var tasks = [];
+
       this.props.terria.workbench.itemIds.filter(isShareable(this.props.terria)).map((w,i)=>{
         if (w.startsWith("//WebODM Projects")){
           const model = this.props.terria.getModelById(BaseModel, w);
@@ -461,7 +475,8 @@ const SharePanel = observer(
           var project = match[1];
           var task = match[2];
 
-          if (!isPublicTask && hasChangePermission){
+          if (!isPublicTask && hasChangePermission && !tasks.includes(`${project}/${task}`)){
+            tasks.push(`${project}/${task}`);
             makePublicPromises.push(
               fetch(`https://asdc.cloud.edu.au/cesium/makeWebODMTaskPublic/${project}/${task}`, {
                 "method": "PATCH",
@@ -474,6 +489,42 @@ const SharePanel = observer(
             );
           }
         }
+      })
+
+      this.props.terria.stories.slice().map(story=>{
+          story.shareData.initSources.map(is=>{
+              is.workbench.map((w,i)=>{                  
+                  if (w.startsWith("//WebODM Projects")){
+                    const model = this.props.terria.getModelById(BaseModel, w);
+                    var isPublicTask = model.info[0].contentAsObject.public;
+          
+                    // project
+                    const containerModel = this.props.terria.getModelById(BaseModel, model.completeKnownContainerUniqueIds[model.completeKnownContainerUniqueIds.length - 2]);
+                    var hasChangePermission = containerModel.itemProperties && containerModel.itemProperties.permissions && containerModel.itemProperties.permissions.includes("change");
+          
+                    var match = regex.exec(model.url);
+                    var project = match[1];
+                    var task = match[2];
+          
+                    if (!isPublicTask && hasChangePermission){
+                      if (!tasks.includes(`${project}/${task}`)){
+                        tasks.push(`${project}/${task}`);
+                        makePublicPromises.push(
+                          fetch(`https://asdc.cloud.edu.au/cesium/makeWebODMTaskPublic/${project}/${task}`, {
+                            "method": "PATCH",
+                            "credentials": "include",
+                          }).then((resp)=>{
+                            if (resp.status==200){
+                              model.info[0].contentAsObject.public = true;
+                            }
+                          })
+                        );
+                      }
+                    }
+                  }
+              })
+              is.models={};
+          })
       })
       
       Promise.all(makePublicPromises).then((responses)=>{

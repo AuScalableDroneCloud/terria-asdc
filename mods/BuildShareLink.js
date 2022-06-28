@@ -3,6 +3,9 @@ import { uniq } from "lodash-es";
 import { runInAction, toJS } from "mobx";
 import Ellipsoid from "terriajs-cesium/Source/Core/Ellipsoid";
 import CesiumMath from "terriajs-cesium/Source/Core/Math";
+
+import Matrix4 from "terriajs-cesium/Source/Core/Matrix4";
+
 import URI from "urijs";
 import hashEntity from "terriajs/lib/Core/hashEntity";
 import isDefined from "terriajs/lib/Core/isDefined";
@@ -13,6 +16,9 @@ import { BaseModel } from "terriajs/lib/Models/Definition/Model";
 import saveStratumToJson from "terriajs/lib/Models/Definition/saveStratumToJson";
 import GlobeOrMap from "terriajs/lib/Models/GlobeOrMap";
 import HasLocalData from "terriajs/lib/Models/HasLocalData";
+
+import Cartesian3 from "terriajs-cesium/Source/Core/Cartesian3";
+import Plane from "terriajs-cesium/Source/Core/Plane";
 
 /** User properties (generated from URL hash parameters) to add to share link URL in PRODUCTION environment.
  * If in Dev, we add all user properties.
@@ -83,10 +89,6 @@ export function getShareData(terria, viewState, options = { includeStories: true
         addTimelineItems(terria, initSource);
         addViewSettings(terria, viewState, initSource);
         addFeaturePicking(terria, initSource);
-        if (includeStories) {
-            // info that are not needed in scene share data
-            addStories(terria, initSource);
-        }
 
         initSource.catalog = []
 
@@ -139,6 +141,57 @@ export function getShareData(terria, viewState, options = { includeStories: true
             }
         })
 
+        // initSource.models=newModels;
+
+        if (includeStories) {
+            // info that are not needed in scene share data
+            // addStories(terria, initSource);
+
+            var stories = JSON.parse(JSON.stringify(terria.stories.slice()));
+
+            stories.map(story=>{
+                story.shareData.initSources.map(is=>{
+                    is.workbench.map((w,i)=>{
+                        if (w.startsWith("//WebODM Projects") || w.startsWith("//Shared WebODM Datasets")){
+                            if (!initSource.catalog.find(m=>m.name=="Shared WebODM Datasets")){
+                                initSource.catalog.push({
+                                    type: "group",
+                                    name: "Shared WebODM Datasets",
+                                    members: []
+                                })
+                            }
+                        }              
+                        if (w.startsWith("//WebODM Projects")){
+                            if(!newModels["//Shared WebODM Datasets"]){
+                                newModels["//Shared WebODM Datasets"]={
+                                    "isOpen": true,
+                                    "knownContainerUniqueIds": [
+                                        "/"
+                                    ],
+                                    "type": "group"
+                                }
+                            }
+                            const model = terria.getModelById(BaseModel, w);
+
+                            if (!newModels[`//Shared WebODM Datasets/${model.name}`] && is.models[w]){
+                                newModels[`//Shared WebODM Datasets/${model.name}`] = is.models[w];
+                                newModels[`//Shared WebODM Datasets/${model.name}`].knownContainerUniqueIds[0] = "//Shared WebODM Datasets";//?
+                            }
+                            var defStratum = model.strata.get("definition");
+                            var modelJson = saveStratumToJson(model.traits, defStratum);
+                            modelJson.type = model.type;
+                            if (!initSource.catalog[0].members.includes(modelJson)){
+                                initSource.catalog[0].members.push(modelJson);
+                            }
+                            
+                            is.workbench[i] = `//Shared WebODM Datasets/${model.name}`;
+                        }
+                    })
+                    is.models={};
+                })
+            })
+            initSource.stories = stories;
+        }
         initSource.models=newModels;
 
         return {
@@ -147,6 +200,30 @@ export function getShareData(terria, viewState, options = { includeStories: true
         };
     });
 }
+
+//for story replay before share
+export function getShareDataForStories(terria, viewState, options = { includeStories: true }) {
+    return runInAction(() => {
+        const { includeStories } = options;
+        const initSource = {};
+        const initSources = [initSource];
+        addStratum(terria, CommonStrata.user, initSource);
+        addWorkbench(terria, initSource);
+        addTimelineItems(terria, initSource);
+        addViewSettings(terria, viewState, initSource);
+        addFeaturePicking(terria, initSource);
+        if (includeStories) {
+            // info that are not needed in scene share data
+            addStories(terria, initSource);
+        }
+
+        return {
+            version: SHARE_VERSION,
+            initSources: initSources
+        };
+    });
+}
+
 /**
  * Serialise all model data from a given stratum except feature highlight
  * and serialise all ancestors of any models serialised
