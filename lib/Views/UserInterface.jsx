@@ -33,7 +33,7 @@ export default function UserInterface(props) {
   const [loggedIn,setLoggedIn] = useState(false);
   
   useEffect(()=>{
-    fetch("https://asdc.cloud.edu.au/api/projects/", {
+    fetch("/api/private/", {
       cache: "no-store",
       credentials: 'include'
     })
@@ -52,7 +52,7 @@ export default function UserInterface(props) {
         {loggedIn ? 
           <MenuLogin
             onClick={()=>{
-              fetch("https://asdc.cloud.edu.au/logout/", {
+              fetch("/logout/", {
                   cache: "no-store",
                   credentials: 'include',
                   mode: 'no-cors'
@@ -64,7 +64,7 @@ export default function UserInterface(props) {
           />:
           <MenuLogin
             onClick={()=>{
-              window.location.href = `https://asdc.cloud.edu.au/login/auth0?next=${window.location.href}`; 
+              window.location.href = `/login/auth0?next=${window.location.href}`; 
             }}
             caption="Login"
           />

@@ -6,6 +6,22 @@ var terriaOptions = {
 
 import { runInAction } from "mobx";
 
+import * as ClippingMixin from "terriajs/lib/ModelMixins/ClippingMixin";
+import * as ClippingMixinMod from "./mods/ClippingMixin";
+
+function overwriteDefault(obj,target){
+    obj.default = target.default;
+}
+overwriteDefault(ClippingMixin,ClippingMixinMod);
+
+import * as Cesium3dTilesMixin from "terriajs/lib/ModelMixins/Cesium3dTilesMixin";
+import * as Cesium3dTilesMixinMod from "./mods/Cesium3dTilesMixin";
+overwriteDefault(Cesium3dTilesMixin,Cesium3dTilesMixinMod);
+
+import * as Cesium3DTilesCatalogItem from "terriajs/lib/Models/Catalog/CatalogItems/Cesium3DTilesCatalogItem";
+import * as Cesium3DTilesCatalogItemMod from "./mods/Cesium3DTilesCatalogItem";
+overwriteDefault(Cesium3DTilesCatalogItem,Cesium3DTilesCatalogItemMod);
+
 // checkBrowserCompatibility('ui');
 import ConsoleAnalytics from 'terriajs/lib/Core/ConsoleAnalytics';
 import GoogleAnalytics from 'terriajs/lib/Core/GoogleAnalytics';
@@ -26,17 +42,11 @@ overwriteGetShareData(BuildShareLink);
 //overwrite share panel to show the make public question for webodm datasets
 import * as SharePanel from "terriajs/lib/ReactViews/Map/Panels/SharePanel/SharePanel.jsx";
 import * as SharePanelMod from "./mods/SharePanel.jsx";
-function overwriteSharePanel(obj){
-    obj.default = SharePanelMod.default;
-}
-overwriteSharePanel(SharePanel);
+overwriteDefault(SharePanel,SharePanelMod);
 
 import * as StoryBuilder from "terriajs/lib/ReactViews/Story/StoryBuilder";
 import * as StoryBuilderMod from "./mods/StoryBuilder.jsx";
-function overwriteStoryBuilder(obj){
-    obj.default = StoryBuilderMod.default;
-}
-overwriteStoryBuilder(StoryBuilder);
+overwriteDefault(StoryBuilder,StoryBuilderMod);
 
 import Terria from 'terriajs/lib/Models/Terria';
 import updateApplicationOnHashChange from 'terriajs/lib/ViewModels/updateApplicationOnHashChange';
@@ -51,6 +61,7 @@ import defined from 'terriajs-cesium/Source/Core/defined';
 import TrustedServers from 'terriajs-cesium/Source/Core/TrustedServers';
 
 TrustedServers.add("asdc.cloud.edu.au",443);
+TrustedServers.add("dev.asdc.cloud.edu.au",443);
 // TrustedServers.add("localhost",8080);
 
 import * as loadJson5 from 'terriajs/lib/Core/loadJson5';

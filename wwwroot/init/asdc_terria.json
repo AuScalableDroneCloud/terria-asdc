@@ -1590,7 +1590,8 @@
             "type": "terria-reference",
             "name": "WebODM Projects",
             "isGroup":true,
-            "url":"https://asdc.cloud.edu.au/cesium/terriaCatalog/projects"
+            "url":"/cesium/terriaCatalog/projects"
+            // "url":"https://asdc.cloud.edu.au/cesium/terriaCatalog/projects"
         }
     ],
     "baseMaps": {

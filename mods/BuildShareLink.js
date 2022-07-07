@@ -3,9 +3,6 @@ import { uniq } from "lodash-es";
 import { runInAction, toJS } from "mobx";
 import Ellipsoid from "terriajs-cesium/Source/Core/Ellipsoid";
 import CesiumMath from "terriajs-cesium/Source/Core/Math";
-
-import Matrix4 from "terriajs-cesium/Source/Core/Matrix4";
-
 import URI from "urijs";
 import hashEntity from "terriajs/lib/Core/hashEntity";
 import isDefined from "terriajs/lib/Core/isDefined";
@@ -16,10 +13,6 @@ import { BaseModel } from "terriajs/lib/Models/Definition/Model";
 import saveStratumToJson from "terriajs/lib/Models/Definition/saveStratumToJson";
 import GlobeOrMap from "terriajs/lib/Models/GlobeOrMap";
 import HasLocalData from "terriajs/lib/Models/HasLocalData";
-
-import Cartesian3 from "terriajs-cesium/Source/Core/Cartesian3";
-import Plane from "terriajs-cesium/Source/Core/Plane";
-
 /** User properties (generated from URL hash parameters) to add to share link URL in PRODUCTION environment.
  * If in Dev, we add all user properties.
  */
@@ -175,7 +168,7 @@ export function getShareData(terria, viewState, options = { includeStories: true
 
                             if (!newModels[`//Shared WebODM Datasets/${model.name}`] && is.models[w]){
                                 newModels[`//Shared WebODM Datasets/${model.name}`] = is.models[w];
-                                newModels[`//Shared WebODM Datasets/${model.name}`].knownContainerUniqueIds[0] = "//Shared WebODM Datasets";//?
+                                newModels[`//Shared WebODM Datasets/${model.name}`].knownContainerUniqueIds[0] = "//Shared WebODM Datasets";
                             }
                             var defStratum = model.strata.get("definition");
                             var modelJson = saveStratumToJson(model.traits, defStratum);
