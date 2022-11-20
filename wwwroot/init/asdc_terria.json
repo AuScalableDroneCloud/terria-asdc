@@ -1505,24 +1505,71 @@
                     "name": "DDP",
                     "members": [
                         {
-                            "type": "3d-tiles",
-                            "name": "Graham Road Construction Site - 13/02/2020",
-                            "url": "https://swift.rc.nectar.org.au/v1/AUTH_9f7c80bfd20f45bebc780b06c405f0df/ddp-projects/1012_GrahamRoad_CraneSimulation/2022_02_13/Scene/tileset_20220213_RC.json",
+                            "type": "group",
+                            "name": "Graham Road Construction Site",
+                            "members":[
+                                {
+                                    "type": "3d-tiles",
+                                    "name": "Graham Road Construction Site - 13/02/2020",
+                                    "url": "https://swift.rc.nectar.org.au/v1/AUTH_9f7c80bfd20f45bebc780b06c405f0df/ddp-projects/1012_GrahamRoad_CraneSimulation/2022_02_13/Scene/tileset_20220213_RC.json",
+                                },
+                                {
+                                    "type": "3d-tiles",
+                                    "name": "Graham Road Construction Site - 20/02/2020",
+                                    "url": "https://swift.rc.nectar.org.au/v1/AUTH_9f7c80bfd20f45bebc780b06c405f0df/ddp-projects/1012_GrahamRoad_CraneSimulation/2022_02_20/Model/Scene/tileset_20220220_RC.json",
+                                },
+                                {
+                                    "type": "3d-tiles",
+                                    "name": "Graham Road Construction Site - 13/03/2020",
+                                    "url": "https://swift.rc.nectar.org.au/v1/AUTH_9f7c80bfd20f45bebc780b06c405f0df/ddp-projects/1012_GrahamRoad_CraneSimulation/2022_03_13/Scene/tileset_20220313_RC.json",
+                                },
+                                {
+                                    "type": "3d-tiles",
+                                    "name": "Graham Road Construction Site - 27/03/2020",
+                                    "url": "https://swift.rc.nectar.org.au/v1/AUTH_9f7c80bfd20f45bebc780b06c405f0df/ddp-projects/1012_GrahamRoad_CraneSimulation/2022_03_27/Scene/tileset_20220327_RC.json",
+                                }
+                            ]
                         },
                         {
-                            "type": "3d-tiles",
-                            "name": "Graham Road Construction Site - 20/02/2020",
-                            "url": "https://swift.rc.nectar.org.au/v1/AUTH_9f7c80bfd20f45bebc780b06c405f0df/ddp-projects/1012_GrahamRoad_CraneSimulation/2022_02_20/Model/Scene/tileset_20220220_RC.json",
-                        },
-                        {
-                            "type": "3d-tiles",
-                            "name": "Graham Road Construction Site - 13/03/2020",
-                            "url": "https://swift.rc.nectar.org.au/v1/AUTH_9f7c80bfd20f45bebc780b06c405f0df/ddp-projects/1012_GrahamRoad_CraneSimulation/2022_03_13/Scene/tileset_20220313_RC.json",
-                        },
-                        {
-                            "type": "3d-tiles",
-                            "name": "Graham Road Construction Site - 27/03/2020",
-                            "url": "https://swift.rc.nectar.org.au/v1/AUTH_9f7c80bfd20f45bebc780b06c405f0df/ddp-projects/1012_GrahamRoad_CraneSimulation/2022_03_27/Scene/tileset_20220327_RC.json",
+                            "type": "group",
+                            "name": "Twelve Apostles",
+                            "members":[
+                                {
+                                    "type": "3d-tiles",
+                                    "name": "Twelve Apostles - 22/07/2022 - 1",
+                                    "url": "https://swift.rc.nectar.org.au/v1/AUTH_9f7c80bfd20f45bebc780b06c405f0df/ddp-projects/1014_TwelveApostlesCliffSurvey/Site1/Scene/tileset_1014_BakerOvenRock.json",
+                                },
+                                {
+                                    "type": "3d-tiles",
+                                    "name": "Twelve Apostles - 22/07/2022 - 2",
+                                    "url": "https://swift.rc.nectar.org.au/v1/AUTH_9f7c80bfd20f45bebc780b06c405f0df/ddp-projects/1014_TwelveApostlesCliffSurvey/Site1/Scene/tileset_1014_Site1_RC.json",
+                                },
+                                {
+                                    "type": "3d-tiles",
+                                    "name": "Twelve Apostles - 22/07/2022 - 3",
+                                    "url": "https://swift.rc.nectar.org.au/v1/AUTH_9f7c80bfd20f45bebc780b06c405f0df/ddp-projects/1014_TwelveApostlesCliffSurvey/Site2/Scene/tileset_1014_Site2_Cesium.json",
+                                },
+                                {
+                                    "type": "3d-tiles",
+                                    "name": "Twelve Apostles - 22/07/2022 - 4",
+                                    "url": "https://swift.rc.nectar.org.au/v1/AUTH_9f7c80bfd20f45bebc780b06c405f0df/ddp-projects/1014_TwelveApostlesCliffSurvey/Site3/Scene/tileset_1014_Site3_RC.json",
+                                },
+                                {
+                                    "type": "3d-tiles",
+                                    "name": "Twelve Apostles - 22/07/2022 - 5",
+                                    "url": "https://swift.rc.nectar.org.au/v1/AUTH_9f7c80bfd20f45bebc780b06c405f0df/ddp-projects/1014_TwelveApostlesCliffSurvey/Site3/Scene/tileset_1014_Site3_Rock1.json",
+                                },
+                                {
+                                    "type": "3d-tiles",
+                                    "name": "Twelve Apostles - 22/07/2022 - 6",
+                                    "url": "https://swift.rc.nectar.org.au/v1/AUTH_9f7c80bfd20f45bebc780b06c405f0df/ddp-projects/1014_TwelveApostlesCliffSurvey/Site3/Scene/tileset_1014_Site3_Rock2.json",
+                                },
+                                {
+                                    "type": "3d-tiles",
+                                    "name": "Twelve Apostles - 22/07/2022 - 7",
+                                    "url": "https://swift.rc.nectar.org.au/v1/AUTH_9f7c80bfd20f45bebc780b06c405f0df/ddp-projects/1014_TwelveApostlesCliffSurvey/Site4/Scene/tileset_1014_Site4_RC.json",
+                                }
+                            ]
                         }
                     ]
                 },

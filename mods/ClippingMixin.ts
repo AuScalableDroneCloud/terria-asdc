@@ -364,7 +364,6 @@ function ClippingMixin<T extends Constructor<BaseType>>(
           id: `export`,
           value: "Export",
           setDimensionValue: stratumId => {
-            console.log(this)
             var scalePoints;
             scalePoints = this.clippingBoxDrawing?.scalePoints.slice(0, 8);
 

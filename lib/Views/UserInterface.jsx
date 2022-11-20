@@ -33,7 +33,7 @@ export default function UserInterface(props) {
   const [loggedIn,setLoggedIn] = useState(false);
   
   useEffect(()=>{
-    fetch("/api/private/", {
+    fetch("/api/private", {
       cache: "no-store",
       credentials: 'include'
     })
