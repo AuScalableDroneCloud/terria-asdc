@@ -412,9 +412,17 @@ function ClippingMixin<T extends Constructor<BaseType>>(
 
             var a = document.createElement('a');
             a.target = "_blank";
-            // a.href = `http://localhost:8081/crop?ept=${ept}&polygon=${wktPolygon}&bbox=${bbox}&outside=${outside}`;
-            // a.href = `/cesium-api/crop?ept=${ept}&polygon=${wktPolygon}&bbox=${bbox}&outside=${outside}`;
-            a.href = `https://cesium-api.asdc.cloud.edu.au/crop?ept=${ept}&polygon=${wktPolygon}&bbox=${bbox}&outside=${outside}`;
+            var regions = [
+              {
+                ept: ept,
+                polygon: wktPolygon,
+                bbox: bbox,
+                outside: outside,
+              },
+            ];
+            a.href = `https://cesium-api.asdc.cloud.edu.au/crop?regions=${encodeURIComponent(
+              JSON.stringify(regions)
+            )}&zipName=${"export.zip"}`;
             a.click();
             a.remove();
           }
