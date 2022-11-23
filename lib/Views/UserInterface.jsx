@@ -5,12 +5,13 @@ import {
 } from "terriajs/lib/ReactViews/StandardUserInterface/customizable/Groups";
 import MenuItem from "terriajs/lib/ReactViews/StandardUserInterface/customizable/MenuItem";
 import PropTypes from "prop-types";
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import RelatedMaps from "./RelatedMaps";
 import MenuLogin from "./MenuLogin";
 import SplitPoint from "terriajs/lib/ReactViews/SplitPoint";
 import StandardUserInterface from "terriajs/lib/ReactViews/StandardUserInterface/StandardUserInterface.jsx";
 import version from "../../version";
+import { baseURL } from "../../Constants";
 
 import "./global.scss";
 
@@ -30,45 +31,45 @@ import "./global.scss";
 // }
 
 export default function UserInterface(props) {
-  const [loggedIn,setLoggedIn] = useState(false);
-  
-  useEffect(()=>{
-    fetch("/api/private", {
+  const [loggedIn, setLoggedIn] = useState(false);
+
+  useEffect(() => {
+    fetch(`${baseURL}/api/private`, {
       cache: "no-store",
-      credentials: 'include'
-    })
-    .then(response => {
+      credentials: "include"
+    }).then(response => {
       if (response.status === 200) {
         setLoggedIn(true);
       }
-    })
-  },[])
+    });
+  }, []);
 
   return (
     <StandardUserInterface {...props} version={version}>
       <MenuLeft>
         <MenuItem caption="About" href="about.html" key="about-link" />
         <RelatedMaps viewState={props.viewState} />
-        {loggedIn ? 
+        {loggedIn ? (
           <MenuLogin
-            onClick={()=>{
-              fetch("/logout/", {
-                  cache: "no-store",
-                  credentials: 'include',
-                  mode: 'no-cors'
-                }).then(()=>{
-                  setLoggedIn(false);
-                })
+            onClick={() => {
+              fetch(`${baseURL}/logout/`, {
+                cache: "no-store",
+                credentials: "include",
+                mode: "no-cors"
+              }).then(() => {
+                setLoggedIn(false);
+              });
             }}
             caption="Logout"
-          />:
+          />
+        ) : (
           <MenuLogin
-            onClick={()=>{
-              window.location.href = `/login/auth0?next=${window.location.href}`; 
+            onClick={() => {
+              window.location.href = `${baseURL}/login/auth0?next=${window.location.href}`;
             }}
             caption="Login"
           />
-        }
+        )}
       </MenuLeft>
       <ExperimentalMenu>
         {/* <If condition={isBrowserSupportedAV()}>

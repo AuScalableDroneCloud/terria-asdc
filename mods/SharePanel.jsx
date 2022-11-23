@@ -478,7 +478,7 @@ const SharePanel = observer(
           if (!isPublicTask && hasChangePermission && !tasks.includes(`${project}/${task}`)){
             tasks.push(`${project}/${task}`);
             makePublicPromises.push(
-              fetch(`https://asdc.cloud.edu.au/cesium/makeWebODMTaskPublic/${project}/${task}`, {
+              fetch(`/makeWebODMTaskPublic/${project}/${task}`, {
                 "method": "PATCH",
                 "credentials": "include",
               }).then((resp)=>{
@@ -510,7 +510,7 @@ const SharePanel = observer(
                       if (!tasks.includes(`${project}/${task}`)){
                         tasks.push(`${project}/${task}`);
                         makePublicPromises.push(
-                          fetch(`https://asdc.cloud.edu.au/cesium/makeWebODMTaskPublic/${project}/${task}`, {
+                          fetch(`/makeWebODMTaskPublic/${project}/${task}`, {
                             "method": "PATCH",
                             "credentials": "include",
                           }).then((resp)=>{

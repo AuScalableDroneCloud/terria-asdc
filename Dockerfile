@@ -14,4 +14,4 @@ RUN yarn gulp
 
 EXPOSE 3001
 
-CMD [ "node", "./node_modules/terriajs-server/lib/app.js", "--config-file", "devserverconfig.json" ]
+CMD [ "node", "./mods/terriajs-server/app.js", "--config-file", "devserverconfig.json" ]
