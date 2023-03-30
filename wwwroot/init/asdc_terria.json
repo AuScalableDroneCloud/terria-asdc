@@ -1638,6 +1638,12 @@
             "name": "WebODM Projects",
             "isGroup":true,
             "url":"/terriaCatalog/projects"
+        },
+        {
+            "type": "terria-reference",
+            "name": "Public Catalogs",
+            "isGroup":true,
+            "url":"/publicCatalogs.json"
         }
     ],
     "baseMaps": {

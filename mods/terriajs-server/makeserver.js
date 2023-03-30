@@ -585,7 +585,7 @@ module.exports = function (options) {
     app.get("/publicCatalogs.json", (req, res) => {
         var urls = [
             "https://terria-catalogs-public.storage.googleapis.com/nationalmap/prod.json",
-            "https://raw.githubusercontent.com/GeoscienceAustralia/dea-config/master/dev/terria/dea-maps-v8.json",
+            "https://raw.githubusercontent.com/GeoscienceAustralia/dea-config/master/prod/terria/dea-maps-v8.json",
             "https://terria-catalogs-public.storage.googleapis.com/de-australia/water-regulations-data/prod.json",
             "https://nsw.digitaltwin.terria.io/api/v0/registry/records/map-config?aspect=terria-config&aspect=terria-init&aspect=group&optionalAspect=terria&dereference=true",
             "https://vic.digitaltwin.terria.io/api/v0/registry/records/map-config?aspect=terria-config&aspect=terria-init&aspect=group&optionalAspect=terria&dereference=true",
