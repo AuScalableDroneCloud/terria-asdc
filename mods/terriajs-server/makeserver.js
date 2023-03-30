@@ -143,7 +143,7 @@ module.exports = function (options) {
             var metaDataPromises = [];
 
             var url = new URL(baseURL);
-            const eptServer = `${url.protocol}//ept.${url.host}`;
+            const eptServer = `${url.protocol}//${url.host}/ept`;
 
             fetch(`${baseURL}/api/projects/${projectId}/tasks/${taskId}`, {
                 headers: { Cookie: req.headers.cookie },
@@ -195,41 +195,43 @@ module.exports = function (options) {
                             var samplePromises = [];
                             var terrainProvider = Cesium.createWorldTerrain();
 
-                            if (metadata[metadataIndex]) {
-                                var truncate = true;
-                                if (!metadata[metadataIndex].schema) return;
-                                metadata[metadataIndex].schema.map((s) => {
-                                    if (
-                                        s.name === "Red" ||
-                                        s.name === "Green" ||
-                                        s.name === "Blue"
-                                    ) {
-                                        if (s.maximum && s.maximum <= 255) {
-                                            truncate = false;
-                                        }
+                            if(task.available_assets.includes("georeferenced_model.laz")){
+                                if (metadata[metadataIndex]) {
+                                    var truncate = true;
+                                    if (metadata[metadataIndex].schema) {
+                                        metadata[metadataIndex].schema.map((s) => {
+                                            if (
+                                                s.name === "Red" ||
+                                                s.name === "Green" ||
+                                                s.name === "Blue"
+                                            ) {
+                                                if (s.maximum && s.maximum <= 255) {
+                                                    truncate = false;
+                                                }
+                                            }
+                                        });
+                                        catalog.push({
+                                            type: "3d-tiles",
+                                            name: task.name + " - Point Cloud",
+                                            url: `${eptServer}/tileset.json?ept=${`${baseURL}/api/projects/${projectId}/tasks/${taskId}/assets/entwine_pointcloud/ept.json`}&${truncate ? "truncate" : null
+                                                }`,
+                                            info: [
+                                                {
+                                                    name: "webODM Properties",
+                                                    content: "",
+                                                    contentAsObject: {
+                                                        public: task.public,
+                                                    },
+                                                    show: false,
+                                                },
+                                            ],
+                                        });
                                     }
-                                });
-                                catalog.push({
-                                    type: "3d-tiles",
-                                    name: task.name + " - Point Cloud",
-                                    url: `${eptServer}/tileset.json?ept=${`${baseURL}/api/projects/${projectId}/tasks/${taskId}/assets/entwine_pointcloud/ept.json`}&${truncate ? "truncate" : null
-                                        }`,
-                                    info: [
-                                        {
-                                            name: "webODM Properties",
-                                            content: "",
-                                            contentAsObject: {
-                                                public: task.public,
-                                            },
-                                            show: false,
-                                        },
-                                    ],
-                                });
+                                }
+                                metadataIndex++;
                             }
-                            metadataIndex++;
-
                             var imageryTypes = ["Orthophoto", "DSM", "DTM"];
-                            imageryTypes.map((imageryType) => {
+                            imageryTypes.filter(t=>task.available_assets.find(aa=> aa.slice(0,-4).toLowerCase()==t.toLowerCase())).map((imageryType) => {
                                 if (metadata[metadataIndex]) {
                                     var rectangle = new Cesium.Rectangle.fromDegrees(
                                         metadata[metadataIndex].bounds.value[0],
