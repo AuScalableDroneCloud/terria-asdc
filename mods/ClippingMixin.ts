@@ -414,10 +414,11 @@ function ClippingMixin<T extends Constructor<BaseType>>(
             a.target = "_blank";
             var regions = [
               {
-                ept: ept,
+                url: ept,
+                type:"ept",
                 polygon: wktPolygon,
                 bbox: bbox,
-                outside: outside,
+                outside: outside
               },
             ];
             a.href = `https://cesium-api.asdc.cloud.edu.au/crop?regions=${encodeURIComponent(
