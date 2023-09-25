@@ -1,3 +1,5 @@
+This repository is a modified version of Terria for ASDC. Contents of the ./mods folder contains the external changes. It contains the terria-server file which contains a server that includes endpoints for webODM files as well as the public catalogs in the application. The rest of the files are for terriajs module which are overwritten in ./index.js file. The rest of the changes have been mainly in the ./lib folder. There is also a copy of the catalog file in ./wwwroot/init/asdc_terria.json.
+
 Terria Map
 ==========
 
